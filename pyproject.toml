@@ -1,0 +1,25 @@
+[project]
+name = "gtemp"
+version = "0.1.0"
+description = "Generate an array of G-code files with different nozzle temperatures"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = []
+
+[[project.authors]]
+name = "Shant Ergenian"
+email = "shaaant@pm.me"
+
+[project.urls]
+repository = "https://github.com/tnahs/gtemp"
+
+[project.scripts]
+gtemp = "gtemp:main"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.pyright]
+typeCheckingMode = "standard"
+reportMissingImports = false
