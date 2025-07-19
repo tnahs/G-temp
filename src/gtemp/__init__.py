@@ -4,7 +4,7 @@ from importlib import metadata
 from pathlib import Path
 
 
-APP_NAME = "gtemp"
+APP_NAME = "G-temp"
 APP_VERSION = metadata.version(APP_NAME)
 
 GCODE_SUFFIX = ".gcode"

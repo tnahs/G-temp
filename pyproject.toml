@@ -1,5 +1,5 @@
 [project]
-name = "gtemp"
+name = "G-temp"
 version = "0.1.0"
 description = "Generate an array of G-code files with different nozzle temperatures"
 readme = "README.md"
@@ -11,10 +11,10 @@ name = "Shant Ergenian"
 email = "shaaant@pm.me"
 
 [project.urls]
-repository = "https://github.com/tnahs/gtemp"
+repository = "https://github.com/tnahs/G-temp"
 
 [project.scripts]
-gtemp = "gtemp:main"
+gt = "gtemp:main"
 
 [build-system]
 requires = ["setuptools"]

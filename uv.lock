@@ -1,7 +1,8 @@
 version = 1
+revision = 1
 requires-python = ">=3.13"
 
 [[package]]
-name = "gtemp"
+name = "g-temp"
 version = "0.1.0"
 source = { editable = "." }

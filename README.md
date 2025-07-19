@@ -1,10 +1,10 @@
-# gtemp
+# G-temp
 
 Generate an array of G-code files with different nozzle temperatures.
 
 ```plaintext
 Usage:
-  gtemp [OPTIONS] [ARGS]
+  gt [OPTIONS] [ARGS]
 
 Required Arguments:
   -t, --templates PATH           Path containing G-code templates: '[name].gtemplate'
@@ -40,7 +40,7 @@ Documentaion:
 ## Installation
 
 The recommended method for installation requires [`uv`][uv]. This allows us to easily install
-`gtemp` into its own virtual environment with the correct version of python and add it to `PATH`.
+`G-temp` into its own virtual environment with the correct version of python and add it to `PATH`.
 
 1. Install `uv`.
 
@@ -49,8 +49,8 @@ The recommended method for installation requires [`uv`][uv]. This allows us to e
 2. Clone this repo.
 
    ```shell
-   $ git clone https://github.com/tnahs/gtemp
-   $ cd gtemp
+   $ git clone https://github.com/tnahs/G-temp
+   $ cd G-temp
    ```
 
 3. Install using `uv`.
@@ -62,13 +62,13 @@ The recommended method for installation requires [`uv`][uv]. This allows us to e
 4. Check the installation.
 
    ```shell
-    $ gtemp --version
+    $ gt --version
    ```
 
 5. That's it! Run `--help` to see available options and documentation.
 
    ```shell
-   $ gtemp --help
+   $ gt --help
    ```
 
 ## Example
@@ -90,7 +90,7 @@ model
 We render the PETG template with the following command:
 
 ```shell
-gtemp                                \
+gt                                   \
   --templates-path ./gtemplates/PETG \
   --nozzle-temps-preset PETG         \
   --output ./gcode/PETG
@@ -99,7 +99,7 @@ gtemp                                \
 And then the PLA template with the following command:
 
 ```shell
-gtemp                               \
+gt                                  \
   --templates-path ./gtemplates/PLA \
   --nozzle-temps-preset PLA         \
   --output ./gcode/PLA
