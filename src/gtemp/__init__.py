@@ -5,6 +5,7 @@ from pathlib import Path
 
 
 APP_NAME = "G-temp"
+APP_NAME_COMMAND = "gt"
 APP_VERSION = metadata.version(APP_NAME)
 
 GCODE_SUFFIX = ".gcode"
@@ -132,7 +133,7 @@ def main() -> int:
             Generate an array of G-code files with different nozzle temperatures.
 
             \033[4mUsage:\033[0m
-              {APP_NAME} [OPTIONS] [ARGS]
+              {APP_NAME_COMMAND} [OPTIONS] [ARGS]
 
             \033[4mRequired Arguments:\033[0m
               -t, --templates PATH           Path containing G-code templates: '[name]{GCODE_TEMPLATE_SUFFIX}'
