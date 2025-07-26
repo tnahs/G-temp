@@ -1,11 +1,10 @@
 # TODO
 
-## Features/Improvements
-
-### v0.1.0
-
-- Add presets
-  - `PCCF`
+- add example files
+- add presets
+  - `PC-CF`
   - `PET`
+  - `PET-CF`
   - `TPU`
-- Use `rich` for better formatting.
+- use `rich` for better formatting
+- use `typer` for the cli
